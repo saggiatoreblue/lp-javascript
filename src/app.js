@@ -1,10 +1,9 @@
-const greeting = 'Hello Assholes';
-console.log(greeting);
+const sticky = require('./sticky');
+function LPinit() {
+  sticky.init();
+}
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
+window.onLoad = LPinit();
 
-getData('https://jsonplaceholder.typicode.com/posts');
+
+

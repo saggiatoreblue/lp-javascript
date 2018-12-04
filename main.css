@@ -70,3 +70,12 @@ img[src="http://placehold.it/300x600"]
 {
     border: 3px solid #39c;
 }
+
+@media (min-width: 1024px) {
+    .fixed {
+        position: fixed;
+    }
+    .absolute {
+        position: absolute;
+    }
+}
